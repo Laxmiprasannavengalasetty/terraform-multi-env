@@ -6,5 +6,5 @@ resource "aws_route53_record" "expense" {
   type    = "A"
   ttl     = 1
   records = startswith(each.key, "frontend") ? [each.value.public_ip] : [each.value.private_ip]  
-  allow_overwrite =true  #[0] means count.index[]
+  allow_overwrite =true
 }
