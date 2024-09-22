@@ -26,12 +26,16 @@ Terraform workspace initialisation commands
 ```
 terraform workspace init
 ```
-* To create new workspace
+* To create new workspace in terraform
 
 ```
 terraform workspace new <name>
 ```
-* To list the workspaces
+* You can list all available workspaces and see which one is active (marked with an asterisk *) by running
 ```
 terraform workspace list
+```
+* To know which workspace you are currently in while using Terraform, you can use the following command
+```
+terraform workspace show
 ```
